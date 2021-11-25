@@ -7,8 +7,9 @@
 
     <!-- CSS stylesheet(s) -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/productPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/productCarousel.css" />
 
+    <link rel="stylesheet" type="text/css" href="css/productPage.css" />
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png" />
 
@@ -27,55 +28,28 @@
       </a>
     </div>
 
-    <nav>
-      <div id="menu">
-        <ul>
-          <li>
-            <a href="product.html">Our products</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
     <section class="productPage">
       <!-- header div -->
       <header>
         <section class="header">
           <h1>Golden Hour</h1>
-          <h2>
-            12.25 in. Birch Plywood Table lamp with white translucent PLA Cap
-          </h2>
-          <p>
-            If you want a lamp that functions as a table lamp, nightstand light,
-            floor lamp, and a piece of art, then Golden Hour is the lamp for you
-            with its warm and cozy feel as well as its Golden Hour shadow
-            projections.
-            <br />
-            <bold> Designer:</bold> Mariam Aleila of B.E.N.
-          </p>
+
+          <p><bold> Designer:</bold> Mariam Aleila of B.E.N.</p>
         </section>
       </header>
 
       <section class="productPic">
-        <!-- Full-width images with number text -->
         <div class="mySlides">
-          <div class="numbertext">1 / 2</div>
-          <img src="assets/lamp7.jpg" style="width: 100%;" />
+          <img src="assets/lamp7.jpg" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">2 / 2</div>
-          <img src="assets/lamp8.jpg" style="width: 100%;" />
+          <img src="assets/lamp8.jpg" />
         </div>
 
-        <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <!-- Thumbnail images -->
         <div class="row">
           <div class="column">
             <img
@@ -97,9 +71,54 @@
       </section>
 
       <section class="description">
+        <h2>
+          12.25 in. Birch Plywood Table lamp with white translucent PLA Cap
+        </h2>
+
+        <p id="productDescription">
+          If you want a lamp that functions as a table lamp, nightstand light,
+          floor lamp, and a piece of art, then Golden Hour is the lamp for you
+          with its warm and cozy feel as well as its Golden Hour shadow
+          projections.
+          <br />
+        </p>
+
+        <section class="overview">
+          <h3>Product Overview</h3>
+          <ul>
+            <li>
+              60 in. Flexible plug-in cord/120 Volts for ample reach and
+              placement <br />
+            </li>
+            <li>Birch plywood offers a clean and lightweight look <br /></li>
+            <li>
+              The Translucent PLA caps provide a soft diffusion of the light for
+              a cozy atmosphere <br />
+            </li>
+            <li>
+              1-60 Watt/120 Volts E26 lightbulb; on/off rocker switch <br />
+            </li>
+            <li>Great for nightstand, table or floor placements <br /></li>
+          </ul>
+
+          <h4>
+            Recommended light bulb:
+          </h4>
+
+          <p>
+            Feit Electric 7.5 Watt non-dimmable energy-efficient S11 soft white
+            (2700k)120V lightbulb.
+
+            <br />
+            If you want to control the amount of light according to your needs,
+            you can easily take off the PLA cap accompanied, you can also use
+            various LED light bulbs to suit your preference as long as it is LED
+            bulb E26 and accommodate Input line voltage of 120 Volts
+          </p>
+        </section>
         <h3>Dimensions</h3>
 
-        <table class="dimensitable">
+        <table class="table">
           <tr>
             <th>Product Depth (in)</th>
             <td>5.7</td>
@@ -116,7 +135,7 @@
           </tr>
         </table>
 
-        <table class="btable">
+        <table class="table">
           <h3>The body</h3>
           <tr>
             <th>Product Depth (in)</th>
@@ -181,45 +200,13 @@
           </tr>
         </table>
       </section>
-
-      <section class="overview">
-        <h3>Product Overview</h3>
-        <ul>
-          <li>
-            60 in. Flexible plug-in cord/120 Volts for ample reach and placement
-          </li>
-          <li>
-            Birch plywood offers a clean and lightweight look
-          </li>
-          <li>
-            The Translucent PLA caps provide a soft diffusion of the light for a
-            cozy atmosphere
-          </li>
-          <li>
-            1-60 Watt/120 Volts E26 lightbulb; on/off rocker switch
-          </li>
-          <li>
-            Great for nightstand, table or floor placements
-          </li>
-        </ul>
-
-        <h4>
-          Recommended light bulb:
-        </h4>
-
-        <p>
-          Feit Electric 7.5 Watt non-dimmable energy-efficient S11 soft white
-          (2700k)120V lightbulb.
-
-          <br />
-          If you want to control the amount of light according to your needs,
-          you can easily take off the PLA cap accompanied, you can also use
-          various LED light bulbs to suit your preference as long as it is LED
-          bulb E26 and accommodate Input line voltage of 120 Volts
-        </p>
-      </section>
     </section>
 
-    <scrip src="js/productPage.js"></scrip>
+    <section class="ressources">
+      <a href="">Repair Guide</a>
+      <a href="">Recycling Guide</a>
+    </section>
+
+    <script src="js/productPage.js"></script>
   </body>
 </html>

@@ -13,6 +13,7 @@
 
 body {
   background-color: black;
+  width: 100%;
 }
 
 #logo {
@@ -43,17 +44,14 @@ li {
   margin-right: 50px;
   display: inline;
 }
-a:link {
+.productSection a:link,
+.productSection a:visited {
   color: #bf9d4c; /* gold */
   text-decoration: none;
   font-weight: 200;
 }
 
-a:visited {
-  color: #bf9d4c; /* gold */
-  text-decoration: none;
-}
-a:hover {
+.productSection a:hover {
   color: #bf9d4c; /* gold */
   text-decoration: underline;
 }
