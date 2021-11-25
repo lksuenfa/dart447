@@ -7,6 +7,7 @@
 
     <!-- CSS stylesheet(s) -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/productPage.css" />
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png" />
@@ -39,22 +40,60 @@
       </div>
     </nav>
 
-    <!-- header div -->
-    <header>
-      <section class="header">
-        <img src="assets/placeholderImg.png" alt="" />
-        <h1>Golden Hour</h1>
-        <h2>
-          12.25 in. Birch Plywood Table lamp with white translucent PLA Cap
-        </h2>
-        <p>
-          If you want a lamp that functions as a table lamp, nightstand light,
-          floor lamp, and a piece of art, then Golden Hour is the lamp for you
-          with its warm and cozy feel as well as its Golden Hour shadow
-          projections.
-          <br />
-          <bold> Designer:</bold> Mariam Aleila of B.E.N.
-        </p>
+    <section class="productPage">
+      <!-- header div -->
+      <header>
+        <section class="header">
+          <h1>Golden Hour</h1>
+          <h2>
+            12.25 in. Birch Plywood Table lamp with white translucent PLA Cap
+          </h2>
+          <p>
+            If you want a lamp that functions as a table lamp, nightstand light,
+            floor lamp, and a piece of art, then Golden Hour is the lamp for you
+            with its warm and cozy feel as well as its Golden Hour shadow
+            projections.
+            <br />
+            <bold> Designer:</bold> Mariam Aleila of B.E.N.
+          </p>
+        </section>
+      </header>
+
+      <section class="productPic">
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 2</div>
+          <img src="assets/lamp7.jpg" style="width: 100%;" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 2</div>
+          <img src="assets/lamp8.jpg" style="width: 100%;" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="assets/lamp7.jpg"
+              style="width: 100%;"
+              onclick="currentSlide(1)"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="assets/lamp8.jpg"
+              style="width: 100%;"
+              onclick="currentSlide(2)"
+            />
+          </div>
+        </div>
       </section>
 
       <section class="description">
@@ -179,6 +218,8 @@
           bulb E26 and accommodate Input line voltage of 120 Volts
         </p>
       </section>
-    </header>
+    </section>
+
+    <scrip src="js/productPage.js"></scrip>
   </body>
 </html>
