@@ -14,7 +14,8 @@
 
 .mySlides img {
   width: 250px;
-  height: 250px;
+  /* height: 250px; */
+  height: auto;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -105,12 +106,14 @@
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .mySlides img {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    /* height: 250px; */
+    height: auto;
   }
 }
 
-/* Desktops and laptops ----------- */
+/* Desktops and lap
+tops ----------- */
 @media only screen and (min-width: 1224px) {
   .mySlides {
     display: flex;
@@ -119,11 +122,30 @@
   }
   .mySlides img {
     width: 300px;
-    height: 300px;
+    /* height: 250px; */
+    height: auto;
   }
   .picAndText {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .productPic {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .description {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .mySlides {
+    padding-top: 10%;
+  }
+
+  .mySlides img {
+    width: 400px;
+    /* height: 250px; */
+    height: auto;
   }
 }
 
