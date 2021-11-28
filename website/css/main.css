@@ -282,8 +282,8 @@ li {
   }
 
   #golden img {
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: auto;
   }
 
   #arcas {
@@ -293,7 +293,7 @@ li {
 
   #arcas img {
     width: 400px;
-    height: 500px;
+    height: auto;
   }
 
   #houyi {
@@ -303,7 +303,7 @@ li {
 
   #houyi img {
     width: 400px;
-    height: 500px;
+    height: auto;
   }
   .pics figcaption {
     margin-top: 5%;
