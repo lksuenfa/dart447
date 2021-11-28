@@ -44,6 +44,7 @@ li {
   margin-right: 50px;
   display: inline;
 }
+
 .productSection a:link,
 .productSection a:visited {
   color: #bf9d4c; /* gold */
@@ -122,6 +123,9 @@ li {
   .largeHeader p {
     font-size: 0.75rem;
   }
+  .productSection p {
+    padding-left: 40%;
+  }
 
   #bkgText {
     margin-top: 10px;
@@ -129,7 +133,7 @@ li {
 
   .pics img {
     width: 300px;
-    height: 400px;
+    height: auto;
   }
 
   .pics figure {
