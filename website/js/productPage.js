@@ -32,3 +32,15 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   // captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+$("#clickDisplay").click(function () {
+  $("#showText").toggle("slow");
+});
+
+$("#clickDimensions").click(function () {
+  $("#showDim").toggle("slow");
+});
+
+$("#clickSpecs").click(function () {
+  $("#showSpecs").toggle("slow");
+});

@@ -13,6 +13,8 @@
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <title>BEN studio</title>
   </head>
   <body>
@@ -38,38 +40,39 @@
         </section>
       </header>
 
-      <section class="productPic">
-        <div class="mySlides">
-          <img src="assets/lamp7.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <img src="assets/lamp8.jpg" />
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div class="row">
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="assets/lamp7.jpg"
-              style="width: 100%;"
-              onclick="currentSlide(1)"
-            />
+      <div class="picAndText">
+        <section class="productPic">
+          <div class="mySlides">
+            <img src="assets/lamp7.jpg" />
           </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="assets/lamp8.jpg"
-              style="width: 100%;"
-              onclick="currentSlide(2)"
-            />
-          </div>
-        </div>
-      </section>
 
+          <div class="mySlides">
+            <img src="assets/lamp8.jpg" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="assets/lamp7.jpg"
+                style="width: 100%;"
+                onclick="currentSlide(1)"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="assets/lamp8.jpg"
+                style="width: 100%;"
+                onclick="currentSlide(2)"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
       <section class="description">
         <h2>
           12.25 in. Birch Plywood Table lamp with white translucent PLA Cap
@@ -84,126 +87,143 @@
         </p>
 
         <section class="overview">
-          <h3>Product Overview</h3>
-          <ul>
-            <li>
-              60 in. Flexible plug-in cord/120 Volts for ample reach and
-              placement <br />
-            </li>
-            <li>Birch plywood offers a clean and lightweight look <br /></li>
-            <li>
-              The Translucent PLA caps provide a soft diffusion of the light for
-              a cozy atmosphere <br />
-            </li>
-            <li>
-              1-60 Watt/120 Volts E26 lightbulb; on/off rocker switch <br />
-            </li>
-            <li>Great for nightstand, table or floor placements <br /></li>
-          </ul>
+          <button id="clickDisplay">
+            <h3>Product Overview</h3>
+          </button>
 
-          <h4>
-            Recommended light bulb:
-          </h4>
+          <div id="showText" style="display: none;">
+            <ul>
+              <li>
+                60 in. Flexible plug-in cord/120 Volts for ample reach and
+                placement <br />
+              </li>
+              <li>Birch plywood offers a clean and lightweight look <br /></li>
+              <li>
+                The Translucent PLA caps provide a soft diffusion of the light
+                for a cozy atmosphere <br />
+              </li>
+              <li>
+                1-60 Watt/120 Volts E26 lightbulb; on/off rocker switch <br />
+              </li>
+              <li>Great for nightstand, table or floor placements <br /></li>
+            </ul>
 
-          <p>
-            Feit Electric 7.5 Watt non-dimmable energy-efficient S11 soft white
-            (2700k)120V lightbulb.
+            <h4>
+              Recommended light bulb:
+            </h4>
 
-            <br />
-            If you want to control the amount of light according to your needs,
-            you can easily take off the PLA cap accompanied, you can also use
-            various LED light bulbs to suit your preference as long as it is LED
-            bulb E26 and accommodate Input line voltage of 120 Volts
-          </p>
+            <p>
+              Feit Electric 7.5 Watt non-dimmable energy-efficient S11 soft
+              white (2700k)120V lightbulb.
+
+              <br />
+              If you want to control the amount of light according to your
+              needs, you can easily take off the PLA cap accompanied, you can
+              also use various LED light bulbs to suit your preference as long
+              as it is LED bulb E26 and accommodate Input line voltage of 120
+              Volts
+            </p>
+          </div>
+
+          <button id="clickDimensions">
+            <h3>Dimensions</h3>
+          </button>
+
+          <div id="showDim" style="display: none;">
+            <table class="table">
+              <tr>
+                <th>Product Depth (in)</th>
+                <td>5.7</td>
+              </tr>
+
+              <tr>
+                <th>Product Width (in)</th>
+                <td>6.6</td>
+              </tr>
+
+              <tr>
+                <th>Product Height (in)</th>
+                <td>12.5</td>
+              </tr>
+            </table>
+
+            <table class="table">
+              <h4>The body</h4>
+              <tr>
+                <th>Product Depth (in)</th>
+                <td>5.2</td>
+              </tr>
+
+              <tr>
+                <th>Product Width (in)</th>
+                <td>6</td>
+              </tr>
+
+              <tr>
+                <th>Product Height (in)</th>
+                <td>12</td>
+              </tr>
+            </table>
+
+            <table class="table">
+              <h4>The PLA Cap</h4>
+              <tr>
+                <th>Product Depth (in)</th>
+                <td>5.7</td>
+              </tr>
+
+              <tr>
+                <th>Product Width (in)</th>
+                <td>6.6</td>
+              </tr>
+
+              <tr>
+                <th>Product Height (in)</th>
+                <td>0.65</td>
+              </tr>
+            </table>
+          </div>
         </section>
-        <h3>Dimensions</h3>
-
-        <table class="table">
-          <tr>
-            <th>Product Depth (in)</th>
-            <td>5.7</td>
-          </tr>
-
-          <tr>
-            <th>Product Width (in)</th>
-            <td>6.6</td>
-          </tr>
-
-          <tr>
-            <th>Product Height (in)</th>
-            <td>12.5</td>
-          </tr>
-        </table>
-
-        <table class="table">
-          <h3>The body</h3>
-          <tr>
-            <th>Product Depth (in)</th>
-            <td>5.2</td>
-          </tr>
-
-          <tr>
-            <th>Product Width (in)</th>
-            <td>6</td>
-          </tr>
-
-          <tr>
-            <th>Product Height (in)</th>
-            <td>12</td>
-          </tr>
-        </table>
-
-        <table class="table">
-          <h3>The PLA Cap</h3>
-          <tr>
-            <th>Product Depth (in)</th>
-            <td>5.7</td>
-          </tr>
-
-          <tr>
-            <th>Product Width (in)</th>
-            <td>6.6</td>
-          </tr>
-
-          <tr>
-            <th>Product Height (in)</th>
-            <td>0.65</td>
-          </tr>
-        </table>
       </section>
 
       <section class="specifications">
-        <table class="table">
+        <button id="clickSpecs">
           <h3>Specifications</h3>
-          <tr>
-            <th>Power Source</th>
-            <th>Height (in.)</th>
-            <th>Lamp Cap Material</th>
-          </tr>
+        </button>
 
-          <tr>
-            <td>Plug-in</td>
-            <td>12.25</td>
-            <td>Translucent PLA</td>
-          </tr>
+        <div id="showSpecs" style="display: none;">
+          <table class="table">
+            <tr>
+              <th>Power Source</th>
+              <th>Height (in.)</th>
+              <th>Lamp Cap Material</th>
+            </tr>
 
-          <tr>
-            <th>Lamp body material</th>
-            <th>Compatible Bulb Type</th>
-            <th>Number of lights</th>
-          </tr>
+            <tr>
+              <td>Plug-in</td>
+              <td>12.25</td>
+              <td>Translucent PLA</td>
+            </tr>
 
-          <tr>
-            <td>Baltic Birch Plywood</td>
-            <td>LED</td>
-            <td>1 Light</td>
-          </tr>
-        </table>
+            <tr>
+              <th>Lamp body material</th>
+              <th>Compatible Bulb Type</th>
+              <th>Number of lights</th>
+            </tr>
+
+            <tr>
+              <td>Baltic Birch Plywood</td>
+              <td>LED</td>
+              <td>1 Light</td>
+            </tr>
+          </table>
+        </div>
       </section>
     </section>
 
     <section class="ressources">
-      <a href="">Repair Guide</a>
+      <h2>More info</h2>
+      <a href="">Repair Guide</a> <br />
       <a href="">Recycling Guide</a>
     </section>
 

@@ -1,7 +1,7 @@
 .productPage {
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 30%;
+
   color: white;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .description {
-  margin: 10%;
+  margin: 10% 10% 0% 10%;
   opacity: 0.7;
 }
 
@@ -39,6 +39,18 @@
   padding-top: 10%;
 }
 
+button {
+  background-color: rgba(0, 0, 0, 0);
+  /* background-color: red; */
+  border: none;
+  border-top: 1px solid white;
+  color: white;
+  font-size: 1em;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0%;
+  margin-top: 10%;
+}
 #productDescription {
   padding-bottom: 10%;
   padding-top: 10%;
@@ -47,6 +59,10 @@
 .description h3 {
   padding-bottom: 10%;
   padding-top: 10%;
+}
+
+h4 {
+  padding-top: 5%;
 }
 
 table {
@@ -65,6 +81,8 @@ th {
 .specifications {
   opacity: 0.7;
   margin-bottom: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .specifications table {
@@ -88,4 +106,73 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
   padding-bottom: 5%;
+}
+
+.ressources {
+  margin: 20%;
+}
+
+.ressources a:visited,
+.ressrouces a:link {
+  color: #bf9d4c; /* gold */
+  text-decoration: none;
+}
+
+.ressouces a:hover {
+  text-decoration: underline;
+}
+
+.ressources h2 {
+  color: white;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .productPage {
+    margin-top: 30%;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .productPage {
+    margin-top: 20%;
+  }
+
+  .header {
+    margin-bottom: 5%;
+  }
+  .header h1 {
+    font-size: 6rem;
+  }
+
+  .header p {
+    font-size: 2rem;
+  }
+
+  .description h2 {
+    font-size: 3rem;
+  }
+
+  .description p {
+    font-size: 1.5rem;
+  }
+
+  .overview h3,
+  .specifications h3 {
+    font-size: 2rem;
+  }
+
+  .overview p,
+  .specifications p {
+    font-size: 1rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
 }

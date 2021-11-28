@@ -97,3 +97,36 @@
 .demo:hover {
   opacity: 1;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .mySlides img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .mySlides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mySlides img {
+    width: 300px;
+    height: 300px;
+  }
+  .picAndText {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+}
