@@ -7,9 +7,13 @@
 
     <!-- CSS stylesheet(s) -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/productCarousel.css" />
 
+    <link rel="stylesheet" type="text/css" href="css/productPage.css" />
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <title>BEN studio</title>
   </head>
@@ -26,24 +30,202 @@
       </a>
     </div>
 
-    <nav>
-      <div id="menu">
-        <ul>
-          <li>
-            <a href="product.html">Our products</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <section class="productPage">
+      <!-- header div -->
+      <header>
+        <section class="header">
+          <h1>Arca Lūcis</h1>
 
-    <!-- header div -->
-    <header>
-      <section class="">
-        <h1>Arcas Lucis</h1>
+          <p><bold> Designer:</bold> Falé Do of B.E.N.</p>
+        </section>
+      </header>
+
+      <div class="picAndText">
+        <section class="productPic">
+          <div class="mySlides">
+            <img src="assets/lamp6.jpg" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="assets/lamp6.jpg"
+                style="width: 100%;"
+                onclick="currentSlide(1)"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="description">
+          <h2>
+            9 in. Birch Plywood Table Lamp Box With Honeycomb Panels and Touch
+            Sensor
+          </h2>
+
+          <p id="productDescription">
+            Having the ability to function as a table lamp, nightstand light for
+            your bedroom or artwork, Arca Lūcis is a playful lamp that offers a
+            welcoming aura to its environment, especially with its shadow
+            projection.
+
+            <br />
+          </p>
+
+          <section class="overview">
+            <button id="clickDisplay">
+              <h3>Product Overview</h3>
+            </button>
+
+            <div id="showText" style="display: none;">
+              <ul>
+                <li>
+                  41 in. flexible plug-in switching AC/DC power adapter
+                  <br />
+                </li>
+                <li>
+                  Birch plywood offers a clean and lightweight look
+                  <br />
+                </li>
+                <li>
+                  The sun-like translucent PLA dome diffuses light softly for a
+                  cozy atmosphere
+                  <br />
+                </li>
+                <li>
+                  1W/3V LED Chips x 2
+                  <br />
+                </li>
+                <li>
+                  Touch sensor switch on one side of the lamp, specifically on
+                  the drawer where all electronic parts resides, for easy access
+                  to repair
+                  <br />
+                </li>
+
+                <li>Non-toxic finishing only with coffee stain and beeswax</li>
+                <li>Great for nightstand and desks</li>
+              </ul>
+
+              <h4>
+                Recommended light bulb:
+              </h4>
+
+              <p>
+                3V LED chips
+              </p>
+            </div>
+
+            <button id="clickDimensions">
+              <h3>Dimensions</h3>
+            </button>
+
+            <div id="showDim" style="display: none;">
+              <table class="table">
+                <tr>
+                  <th>Product Depth (in)</th>
+                  <td>5</td>
+                </tr>
+
+                <tr>
+                  <th>Product Width (in)</th>
+                  <td>5</td>
+                </tr>
+
+                <tr>
+                  <th>Product Height (in)</th>
+                  <td>9</td>
+                </tr>
+              </table>
+
+              <table class="table">
+                <h4>The PLA Side Panels</h4>
+                <tr>
+                  <th>Product Depth (in)</th>
+                  <td>0.63</td>
+                </tr>
+
+                <tr>
+                  <th>Product Width (in)</th>
+                  <td>3.81</td>
+                </tr>
+
+                <tr>
+                  <th>Product Height (in)</th>
+                  <td>6.44</td>
+                </tr>
+              </table>
+
+              <table class="table">
+                <h4>The PLA Top Panel</h4>
+                <tr>
+                  <th>Product Depth (in)</th>
+                  <td>3.63</td>
+                </tr>
+
+                <tr>
+                  <th>Product Width (in)</th>
+                  <td>3.63</td>
+                </tr>
+
+                <tr>
+                  <th>Product Height (in)</th>
+                  <td>0.63</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </section>
+      </div>
+      <section class="specifications">
+        <button id="clickSpecs">
+          <h3>Specifications</h3>
+        </button>
+
+        <div id="showSpecs" style="display: none;">
+          <table class="table">
+            <tr>
+              <th>Power Source</th>
+              <th>Height (in.)</th>
+              <th>Lamp Cap Material</th>
+            </tr>
+
+            <tr>
+              <td>Plug-in</td>
+              <td>9</td>
+              <td>Translucent PLA</td>
+            </tr>
+
+            <tr>
+              <th>Lamp body material</th>
+              <th>Compatible Bulb Type</th>
+              <th>Number of lights</th>
+            </tr>
+
+            <tr>
+              <td>
+                Baltic Birch Plywood
+              </td>
+              <td>3V LED chip</td>
+              <td>2 chips</td>
+            </tr>
+          </table>
+        </div>
       </section>
-    </header>
+    </section>
+
+    <section class="ressources">
+      <h2>More info</h2>
+      <a href="">Set Up Guide</a>
+      <br />
+      <a href="">Repair Guide</a> <br />
+      <a href="">Recycling Guide</a>
+    </section>
+
+    <script src="js/productPage.js"></script>
   </body>
 </html>

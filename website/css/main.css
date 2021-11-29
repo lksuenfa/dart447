@@ -46,13 +46,15 @@ li {
 }
 
 .productSection a:link,
-.productSection a:visited {
+.productSection a:visited,
+.ressources a:link,
+.ressources a:visited {
   color: #bf9d4c; /* gold */
   text-decoration: none;
   font-weight: 200;
 }
 
-.productSection a:hover {
+.productSection a:hover .ressources a:hover {
   color: #bf9d4c; /* gold */
   text-decoration: underline;
 }
